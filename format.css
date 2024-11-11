@@ -78,8 +78,8 @@ body {
     flex-direction: row; /* Stack elements vertically */
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.1)); /* Soft gradient */
     padding: 10px 10px; /* Add padding to give the content space */
-    border-radius: 12px; /* Rounded corners for the container */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 25px; /* Rounded corners for the container */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10); /* Subtle shadow for depth */
     margin: 10px 0; /* Space above and below */
     transition: transform 0.3s ease-in-out; /* Smooth transition */
 	background-color: beige;
@@ -98,10 +98,10 @@ body {
     color: #333; /* Dark text for better contrast */
     line-height: 1; /* Increase line height for better readability */
     max-width: 1000px; /* Limit the width for better line length */
-    margin: 20px 0; /* Space around the text */
+    margin: 10px 0; /* Space around the text */
     opacity: 0; /* Initially hidden for animation */
     transform: translateX(-30px); /* Start from the left off-screen */
-    animation: slideIn 1s ease-out forwards; /* Animation to slide and fade in */
+    animation: slideIn 3s ease-out forwards; /* Animation to slide and fade in */
 }
 
 /* Keyframes for text animation */
@@ -136,12 +136,12 @@ body {
     text-decoration: none;
     text-align: center;
     background-color: #f4f4f4; /* Lighter background color */
-    border-radius: 12px; /* Rounded corners */
+    border-radius: 25px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
     padding: 10px 20px; /* Add padding for better aesthetics */
     position: absolute; /* Position it relative to the nearest positioned ancestor */
-    right: 20px; /* Align to the right side with some margin */
+    right: 30px; /* Align to the right side with some margin */
     top: 1200px; /* Vertically center the element */
     transform: translateY(-50%); /* Adjust for perfect vertical centering */
     width: auto; /* Let the width adjust based on content */
