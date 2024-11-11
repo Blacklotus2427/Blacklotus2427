@@ -14,7 +14,7 @@ body
 
 .parallax1 
 {
-    background-image: mainpage.jpeg;
+    background-image:('mainpage.jpeg');
     height: 100vh; 
 	width: 100%;
     background-attachment: fixed;
