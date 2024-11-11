@@ -125,7 +125,7 @@ h1
 .main:hover
 {
 	text-decoration: underline;
-	color: #88B04B;
+	color: #BC243C;
 }
 
 .link
@@ -140,7 +140,7 @@ h1
 .link:hover
 {
 	text-decoration: underline;
-	color: #88B04B;
+	color: #BC243C;
 }
 
 @media (max-width: 768px) 
