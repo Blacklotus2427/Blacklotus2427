@@ -1,38 +1,18 @@
-html
-{
-	scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
-	
 
-body 
-{
+body {
     margin: 0;
-	padding: 0;
-	background-color:	#719664;
+    padding: 0;
+    background-color:  #88B04B;
 	
-}  
-
-.parallax1 
-{
-     background-image: url('https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg');
-    height: 100vh; 
-	width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; 
 }
 
-
-.parallax2 
-{
-	background-image: url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg');
-    height: 100vh; 
-	width: 100%;
+.parallax1 {
+    background-image: url('https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpeg');
+    height: 100vh;
+    width: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,20 +20,33 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white; 
+    color: white;
+}
+
+.parallax2 {
+    background-image: url('https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg');
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .container {
-    display: flex; 
-    margin: 20px 0; 
+    display: flex;
+    margin: 20px 0;
 }
 
-.img
-{
+.img {
     border: 3px solid black;
-    width: 300px; 
-    height: 305px; 
-    margin-right: 20px; 
+    width: 300px;
+    height: 305px;
+    margin-right: 20px;
 }
 
 .name {
@@ -63,101 +56,169 @@ body
     border-style: groove;
     border-color: white;
     padding: 40px;
+    
+    /* Apply the animation with a duration of 1 second, ease-in-out timing, and it will run once */
     animation: fadeInScaleUp 3s ease-in-out;
 }
-.projects
-{
-	text-align: center;
+
+.projects {
+    text-align: center;
     margin: 40px 0;
-    border-width: 3px; 
-    border-style: groove; 
-    border-color: white; 
-    padding: 20px; 
+    border-width: 3px;
+    border-style: groove;
+    border-color: white;
+    padding: 20px;
 }
 
-
+/* Flexbox Layout for .introduction */
 .introduction {
     display: flex;
-    align-items: flex-start;
-	
-}
-
-.introduction p {
-    flex: 1;
-    font-style: italic;
-    font-size: 20px;
-    font-family: Monaco, monospace; 
-    text-align: left;
-}
-
-
-.footer 
-{
-    text-align: center;
-    margin: 20px 0;
+    align-items: center; /* Vertically align content */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: row; /* Stack elements vertically */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.1)); /* Soft gradient */
+    padding: 40px 20px; /* Add padding to give the content space */
+    border-radius: 12px; /* Rounded corners for the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 40px 0; /* Space above and below */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
 	background-color: beige;
-	height: 50px;
-	padding: 100px;
-	justify-content: center;
-	display: flex;
-	align-items: center;
 }
 
-
-h1 
-{
-    font-family:times new roman; 
-    font-size: 69px; 
-	
+.introduction:hover {
+    transform: scale(1.02); /* Slight scale-up on hover */
 }
 
-.main
-{
-	
-	font-size: 20px;
-	font-family: courier new;
-	color: #90AEAD;
-	text-decoration: none;
-	text-align: center;
-	
+/* Styling for the paragraph inside .introduction */
+.introduction p {
+    font-style: italic;
+    font-size: 22px; /* Slightly bigger for better readability */
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    text-align: center; /* Center align the text */
+    color: #333; /* Dark text for better contrast */
+    line-height: 1; /* Increase line height for better readability */
+    max-width: 1000px; /* Limit the width for better line length */
+    margin: 20px 0; /* Space around the text */
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateX(-30px); /* Start from the left off-screen */
+    animation: slideIn 1s ease-out forwards; /* Animation to slide and fade in */
 }
 
-.main:hover
-{
-	text-decoration: underline;
-    color: #BC243C;
-    transform: translateY(-10px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+/* Keyframes for text animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Start off the screen on the left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at normal position */
+    }
 }
 
-.link
-{
-	font-size: 30px;
-	font-family: courier new;
-	color: #90AEAD;
-	margin: 0 50px;
-	text-decoration: none;
-}
-
-.link:hover
-{
-	text-decoration: underline;
-    color: #BC243C;
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
-}
-
-@media (max-width: 768px) 
-{
-    h1 
-	{
-        font-size: 28px; 
+@media (max-width: 768px) {
+    .introduction {
+        padding: 20px 15px; /* Reduce padding on smaller screens */
     }
 
- 
+    .introduction p {
+        font-size: 18px; /* Adjust text size for smaller screens */
+        max-width: 120%; /* Make the text container take full width */
+    }
+}
+
+
+/* Styling for the .main section */
+.main {
+    font-size: 18px; /* Adjust font size for smaller look */
+    font-family: 'Courier New', Courier, monospace;
+    color: #90AEAD;
+    text-decoration: none;
+    text-align: center;
+    background-color: #f4f4f4; /* Lighter background color */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    padding: 10px 20px; /* Add padding for better aesthetics */
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    right: 20px; /* Align to the right side with some margin */
+    top: 1200px; /* Vertically center the element */
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+    width: auto; /* Let the width adjust based on content */
+}
+
+/* Hover effect for the .main section */
+.main:hover {
+    text-decoration: underline;
+    color: #BC243C;
+    transform: translateY(-50%) translateX(5px); /* Add small rightward shift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
+/* Footer Styling */
+.footer {
+    text-align: center; /* Center text horizontally */
+    background-color: #f1e3d3; /* Softer beige background */
+    padding: 20px 40px; /* Add spacing inside */
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 40px; /* Add space above */
+    position: relative; /* Keep the footer at the bottom of the page */
+}
+
+/* H1 Styling */
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 70px; /* Reduced font size for better fit */
+    color: white; /* Darker text color for contrast */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    margin: 0; /* Remove default margin */
+    letter-spacing: 1px; /* Add some spacing between letters for readability */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 20px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+.link {
+    font-size: 30px;
+    font-family: Courier New;
+    color:  #92A8D1;
+    margin: 0 50px;
+    text-decoration: none;
+}
+
+.link:hover {
+   text-decoration: underline;
+    color: #BC243C;
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
 
     .parallax1, .parallax2 {
-        height: 90vh; 
+        height: 90vh;
+    }
+
+    .main {
+        font-size: 18px; /* Adjust font size for mobile */
+        padding: 20px; /* Adjust padding for mobile */
     }
 }
 
