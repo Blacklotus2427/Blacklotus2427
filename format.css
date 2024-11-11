@@ -8,7 +8,7 @@ body
 {
     margin: 0;
 	padding: 0;
-	background-color:	#719664;
+	background-color:#88B04B;
 	
 }  
 
@@ -81,6 +81,7 @@ body
     display: flex;
     align-items: flex-start;
 	background-color: beige;
+	
 }
 
 .introduction p {
@@ -89,6 +90,7 @@ body
     font-size: 20px;
     font-family: Monaco, monospace; 
     text-align: left;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -102,6 +104,7 @@ body
 	justify-content: center;
 	display: flex;
 	align-items: center;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 
