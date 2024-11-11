@@ -109,6 +109,7 @@ h1
 {
     font-family:times new roman; 
     font-size: 69px; 
+	background-color: beige;
 	
 }
 
@@ -117,7 +118,7 @@ h1
 	
 	font-size: 20px;
 	font-family: courier new;
-	color: #90AEAD;
+	color: black;
 	text-decoration: none;
 	text-align: center;
 	
