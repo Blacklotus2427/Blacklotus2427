@@ -7,6 +7,16 @@
 
 body {
     font-family: Arial, sans-serif;
+	background-image: url('https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+	height: 100vh; 
+	width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
@@ -40,7 +50,8 @@ h2 {
     color: #555;
 }
 
-.input-group input {
+.input-group input,
+.input-group select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -49,7 +60,8 @@ h2 {
     color: #333;
 }
 
-.input-group input:focus {
+.input-group input:focus,
+.input-group select:focus {
     border-color: #007bff;
     outline: none;
 }
