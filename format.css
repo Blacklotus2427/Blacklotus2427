@@ -126,7 +126,9 @@ h1
 .main:hover
 {
 	text-decoration: underline;
-	color: #BC243C;
+    color: #BC243C;
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .link
@@ -141,7 +143,9 @@ h1
 .link:hover
 {
 	text-decoration: underline;
-	color: #BC243C;
+    color: #BC243C;
+    transform: translateY(-5px); /* Slight hover lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 @media (max-width: 768px) 
